@@ -1,0 +1,80 @@
+# Initialize a new Git repository in the current directory
+git init
+
+# Clone a remote repository to your local machine
+git clone <repository-url>
+
+# Check the status of your working directory and staging area
+git status
+
+# Add a specific file to the staging area
+git add <file>
+
+# Add all files to the staging area
+git add .
+
+# Commit staged changes with a message
+git commit -m "Commit message"
+
+# Display a log of commits in the repository
+git log
+
+# Create a new branch
+git branch <branch-name>
+
+# Switch to a different branch
+git checkout <branch-name>
+
+# Merge a branch into the current branch
+git merge <branch-name>
+
+# Delete a branch
+git branch -d <branch-name>
+
+# Stage all modified and deleted files and commit them
+git commit -am "Commit message"
+
+# Unstage a specific file
+git reset <file>
+
+# Discard changes in the working directory for a file
+git checkout -- <file>
+
+# Show differences between the working directory and the staging area
+git diff
+
+# Undo the last commit, but keep changes in the working directory
+git reset --soft HEAD~1
+
+# Revert the last commit and discard all changes
+git reset --hard HEAD~1
+
+# Connect your local repository to a remote GitHub repository
+git remote add origin <repository-url>
+
+# Push local branch to the remote repository on GitHub
+git push origin <branch-name>
+
+# Push all local branches to the remote repository
+git push --all
+
+# Pull changes from the remote repository and merge them into the current branch
+git pull origin <branch-name>
+
+# Fetch changes from the remote repository without merging them
+git fetch origin
+
+# Open a pull request via the GitHub CLI (requires 'gh' CLI)
+gh pr create
+
+# List remote branches
+git branch -r
+
+# Set up an upstream branch for future pushes
+git push --set-upstream origin <branch-name>
+
+# Fork a repository using the GitHub CLI (requires 'gh' CLI)
+gh repo fork <repository-url>
+
+# Clone your forked repository
+git clone https://github.com/<your-username>/<repository>.git
